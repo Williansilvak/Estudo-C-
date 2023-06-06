@@ -1,0 +1,20 @@
+using System;
+
+public class Program
+{
+    public static void Main()
+    {
+        double pesoProprio = 10.0; // Peso próprio da estrutura em kN
+        double pesoSobrecarga = 5.0; // Peso da sobrecarga em kN
+
+        double cargaTotal = CalcularCargaEstrutural(pesoProprio, pesoSobrecarga);
+
+        Console.WriteLine("A carga total é: " + cargaTotal + " kN");
+    }
+
+    public static double CalcularCargaEstrutural(double pesoProprio, double pesoSobrecarga)
+    {
+        double cargaTotal = pesoProprio + pesoSobrecarga;
+        return cargaTotal;
+    }
+}
